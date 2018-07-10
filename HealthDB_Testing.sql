@@ -48,7 +48,7 @@ INSERT Employees(DepartmentID, JobTitle, FirstName, LastName, SSN, Phone, EmailA
 	(5,'Urologist', 'Steven', 'Hefner', '100-10-2323', '914-121-2323','shefner@gmail.com', '1970-12-17'),
 	(3,'Gastrologist', 'Tito', 'Guillen', '113-45-6723', '915-361-5623','tguillen@mail.com', '1980-11-17'),
 	(1,'Pedatric Specialist', 'Amanda', 'Fenty', '050-76-8983', '315-451-2763','fentyamanda@gmail.com', '1995-05-03'),
-	(2,'Neurologist', 'Michael', 'Heck', '078-34-8327', '917-313-1189','michael.heck@yahoo.com', '1975-01-11'),
+	(2,'Neurologist', 'Michael', 'Hook', '078-34-8327', '917-313-1189','michael.hook@yahoo.com', '1975-01-11'),
 	(4,'Orthopaedic Doctor', 'Lin', 'Huang', '112-56-8080', '345-341-7893','lhuang23@gmail.com', '1980-06-23')
 
 GO
@@ -68,10 +68,10 @@ INSERT INTO PatientCosts(CostsID)
 GO
 
 INSERT Patients(FirstName, LastName, SSN, DateOfBirth,PatientAddress,Phone,EmailAddress,PrimaryCareDoctor,EmergencyContact,EmergencyContactNumber,InsuranceName,DateRegistered) VALUES
-	('Chris','Cowicki','101-01-2322','1997-11-23','601 Comstock Ave, Syracuse NY 13210', '914-112-3902',NULL,NULL,'Margret Cowicki', '914-112-6049','Aetna','2010-01-23'),
-	('Michael','Hellman','112-81-5526','1990-01-13','201 Euclid Ave, Syracuse NY 13210', '917-445-1243',NULL,NULL,'Bob Hellman', '914-445-7748','BlueCross BlueShield','2013-07-31'),
-	('Thandar','Zone','051-77-3387','1996-04-22','106 12th st, NY, NY 10013', '917-212-5435',NULL,NULL,'Scott Welty', '917-343-6649','Humana','2015-04-03'),
-	('Ryan','Hua','040-54-3266','1989-02-23','1 Boston Post Rd, Mamaroneck NY 10543', '914-345-7202',NULL,NULL,'Wendy Hua', '914-342-8349','UnitedHealthOne','2011-12-23'),
+	('Mike','Cowicki','101-01-2322','1997-11-23','601 Comstock Ave, Syracuse NY 13210', '914-112-3902',NULL,NULL,'Margret Cowicki', '914-112-6049','Aetna','2010-01-23'),
+	('Steven','Heeman','112-81-5526','1990-01-13','201 Euclid Ave, Syracuse NY 13210', '917-445-1243',NULL,NULL,'Bob Heeman', '914-445-7748','BlueCross BlueShield','2013-07-31'),
+	('Mary','Zone','051-77-3387','1996-04-22','106 12th st, NY, NY 10013', '917-212-5435',NULL,NULL,'Scott Welty', '917-343-6649','Humana','2015-04-03'),
+	('Scott','Hua','040-54-3266','1989-02-23','1 Boston Post Rd, Mamaroneck NY 10543', '914-345-7202',NULL,NULL,'Wendy Hua', '914-342-8349','UnitedHealthOne','2011-12-23'),
 	('Jason','Oh','131-63-8682','1993-03-01','10 Larchmont Ave, White Plains NY 10538', '914-882-0461',NULL,NULL,'Mina Oh', '914-922-6790','THE IHC GROUP','2005-11-13')
 
 GO
@@ -166,7 +166,7 @@ SET InsuranceID = p.InsuranceID FROM Patients p WHERE Billing.PatientCostID = p.
 GO
 
 INSERT PatientHealthHistory(PatientID, WeightInPounds,HeightInFeet,HeartRateInBPM,BloodPressure,ReportedSymptoms,PatientProcedures, Prescriptions,LastSeenPhysician,DateLastUpdated) Values
-	(1,160,'5.9',80,75,'Dizzyness, Headache','General Checkup',NULL, 'Michael Heck', '2017-01-12'),
+	(1,160,'5.9',80,75,'Dizzyness, Headache','General Checkup',NULL, 'Michael Hook', '2017-01-12'),
 	(2,140,'6.0',80,75,'blood in urine','Prostate Exam',NULL, 'Steven Hefner', '2018-02-13'),
 	(3,100,'5.5',80,75,'Feet hurt when walking','General Checkup', NULL, 'Lin Huang', '2018-02-12'),
 	(4,170,'6.2',80,75,'None, Needed annual checkup for school','General Checkup',NULL, 'Amanda Fenty', '2018-05-01'),
